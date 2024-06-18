@@ -1,16 +1,17 @@
 import React from "react";
 
-const BookOne = (props) => {
-  const background = "bg-bgPrimary";
+const BookSeven = (props) => {
+  const background = "bg-bgFifth";
+
   return (
     <section className={`relative min-h-screen flex ${background}`}>
       <div className="container max-w-screen-xl mx-auto flex justify-center items-center text-4xl ">
         <div>
-          <img src="backstagetalks_cover_issue_8.png" alt="" />
+          <img src="backstagetalks_cover_issue_4.png" alt="" />
         </div>
       </div>
     </section>
   );
 };
 
-export default BookOne;
+export default BookSeven;
