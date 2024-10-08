@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: transparent;
+  transition: background-color 1s ease-in;
+}
 img {
   vertical-align: middle;
   overflow-clip-margin: content-box;

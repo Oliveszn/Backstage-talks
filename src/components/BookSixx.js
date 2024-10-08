@@ -1,7 +1,7 @@
 import React from "react";
 
-const BookSIx = () => {
-  const background = "bg-bgFifth";
+const BookSixx = () => {
+  const background = "bg-bgSix";
 
   return (
     <section className={`relative min-h-screen flex ${background}`}>
@@ -14,4 +14,4 @@ const BookSIx = () => {
   );
 };
 
-export default BookSIx;
+export default BookSixx;
