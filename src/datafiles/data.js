@@ -2,7 +2,7 @@ export const data = [
   {
     id: 1,
     image: "backstagetalks_cover_issue_8.png",
-    theme: { background: "#f6e0a4", color: "#333" },
+    theme: { background: "bg-bgPrimary", color: "#333" },
     issue: "Issue #8",
     linkToBuy: "BUY HERE",
     link: "https://brot.sk/products/pre-order-backstage-talks-issue-8",

@@ -6,7 +6,7 @@
 // import BookThree from "./components/BookThree";
 // import BookSixx from "./components/BookSixx";
 // import BookTwo from "./components/BookTwo";
-// import Navigation from "./components/Navigation";
+import Navigation from "./components/Navigation";
 import { useEffect, useRef } from "react";
 import { data } from "./datafiles/data";
 
@@ -57,40 +57,52 @@ function App() {
     //     <BookEight id="section8" />
     //   </div>
     // </div>
-    <section>
-      {data.map((group, i) => {
-        return (
-          <div
-            ref={(el) => (GroupRef.current[i] = el)}
-            key={i}
-            className="h-screen container max-w-screen-xl mx-auto flex justify-center items-center"
-            data-bgColor={group.theme.background}
-          >
-            <div className="text-center">
-              <img
-                src={group.image}
-                alt="Cover of Backstage Talks Issue 8"
-                className="w-full h-auto max-w-sm mx-auto"
-              />
-              <h1>{group.issue}</h1>
-              <a href={group.link}>
-                <p>{group.linkToBuy}</p>
-              </a>
-              <p>
-                or in{" "}
-                <a
-                  href="https://backstagetalks.com/stocklist.php"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  selected stores
+    <>
+      <section>
+        <Navigation />
+        {data.map((group, i) => {
+          return (
+            <div
+              ref={(el) => (GroupRef.current[i] = el)}
+              key={i}
+              className="h-screen container max-w-screen-xl mx-auto flex justify-center items-center"
+              data-bgColor={group.theme.background}
+            >
+              <div className="text-center">
+                <img
+                  src={group.image}
+                  alt="Cover of Backstage Talks Issue 8"
+                  className="w-full h-auto max-w-sm mx-auto"
+                />
+                <h1 className="font-bold text-lg">{group.issue}</h1>
+                <a className="font-semibold text-[#fff]" href={group.link}>
+                  <p>{group.linkToBuy}</p>
                 </a>
-              </p>
+                <p>
+                  or in{" "}
+                  <a
+                    href="https://backstagetalks.com/stocklist.php"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    selected stores
+                  </a>
+                </p>
+              </div>
             </div>
-          </div>
-        );
-      })}
-    </section>
+          );
+        })}
+      </section>
+      <footer>
+        <p>
+          Backstage Talks is a magazine of casual, but in depth dialogues on
+          design and business. Our decisions shape and influence this complex
+          world—to have a chance to make the right ones, we need to talk.
+        </p>
+        <p>© 2024 Published by Büro Milk </p>
+        <p>Privacy Policy</p>
+      </footer>
+    </>
   );
 }
 
