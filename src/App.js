@@ -53,7 +53,11 @@ function App() {
                   className="w-full h-auto max-w-sm mx-auto"
                 />
                 <h1 className="font-bold text-lg">{group.issue}</h1>
-                <a className="font-semibold text-[#fff]" href={group.link}>
+                <a
+                  className="font-semibold"
+                  href={group.link}
+                  style={{ color: group.theme.secColor }}
+                >
                   <p>{group.linkToBuy}</p>
                 </a>
                 <p>
@@ -62,6 +66,7 @@ function App() {
                     href="https://backstagetalks.com/stocklist.php"
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{ color: group.theme.secColor }}
                   >
                     selected stores
                   </a>

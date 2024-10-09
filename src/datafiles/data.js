@@ -2,7 +2,7 @@ export const data = [
   {
     id: 1,
     image: "backstagetalks_cover_issue_8.png",
-    theme: { background: "#f6e0a4", color: "#333" },
+    theme: { background: "#f6e0a4", color: "#333", secColor: "#fff" },
     issue: "Issue #8",
     linkToBuy: "BUY HERE",
     link: "https://brot.sk/products/pre-order-backstage-talks-issue-8",
@@ -10,7 +10,7 @@ export const data = [
   {
     id: 2,
     image: "backstagetalks_cover_issue_7.png",
-    theme: { background: "#ff608c", color: "#333" },
+    theme: { background: "#ff608c", color: "#333", secColor: "#fff" },
     issue: "Issue #7",
     linkToBuy: "BUY HERE",
     link: "https://brot.sk/products/backstage-talks-issue-7",
@@ -18,7 +18,7 @@ export const data = [
   {
     id: 3,
     image: "backstagetalks_cover_issue_6.png",
-    theme: { background: "#fff" },
+    theme: { background: "#fff", color: "#333", secColor: "#ff608c" },
     issue: "Issue #6",
     linkToBuy: "BUY HERE",
     link: "https://brot.sk/products/backstage-talks-issue-6?_pos=2&_sid=1c5730cc8&_ss=r",
@@ -26,7 +26,7 @@ export const data = [
   {
     id: 4,
     image: "backstagetalks_cover_issue_5.png",
-    theme: { background: "#00c1b5" },
+    theme: { background: "#00c1b5", color: "#333", secColor: "#fff" },
     issue: "Issue #5",
     linkToBuy: "BUY HERE",
     link: "https://brot.sk/products/backstage-talks-5?_pos=3&_sid=1c5730cc8&_ss=r",
@@ -34,21 +34,21 @@ export const data = [
   {
     id: 5,
     image: "backstagetalks_cover_issue_4.png",
-    theme: { background: "#ff6519" },
+    theme: { background: "#ff6519", color: "#333", secColor: "#fff" },
     issue: "Issue #4 is sold out",
     linkToBuy: "",
   },
   {
     id: 6,
     image: "backstagetalks_cover_issue_3.png",
-    theme: { background: "#ffbe00" },
+    theme: { background: "#ffbe00", color: "#333", secColor: "#fff" },
     issue: "Issue #3 is sold out",
     linkToBuy: "",
   },
   {
     id: 7,
     image: "backstagetalks_cover2017.png",
-    theme: { background: "#1d3fbb" },
+    theme: { background: "#1d3fbb", color: "#333", secColor: "#fff" },
     issue: "Issue #2",
     linkToBuy: "BUY HERE",
     link: "https://brot.sk/products/backstage-talks-2?_pos=1&_sid=1c5730cc8&_ss=r",
@@ -56,7 +56,7 @@ export const data = [
   {
     id: 8,
     image: "backstagetalks_cover2016_n.png",
-    theme: { background: "#E30512" },
+    theme: { background: "#E30512", color: "#333", secColor: "#fff" },
     issue: "Issue #1 is sold out",
     linkToBuy: "",
   },
